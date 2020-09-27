@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  generator:
+    container_name: generator
+    image: nginx
+    ports:
+    - "80:80"
+    volumes:
+      - ./src:/usr/share/nginx/html
